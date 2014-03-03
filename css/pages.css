@@ -1,0 +1,431 @@
+/**
+ * @file
+ * Page Styling
+ *
+ * Style the markup found in page.tpl.php. Also includes some styling of
+ * miscellaneous Drupal elements that appear in the $content variable, such as
+ * ul.links, .pager, .more-link, etc.
+ */
+
+
+/*
+ * Body
+ */
+body {
+  background-color: #cccccc;
+  margin: 0;
+  padding: 0px;
+  font-family: Verdana, Geneva, Sans-serif;
+}
+
+#page-wrapper {
+    font-size: 1em; 
+}
+
+#page {
+}
+
+/*
+ * The skip navigation link will be completely hidden until a user tabs to the
+ * link. See http://www.webaim.org/techniques/skipnav/
+ */
+#skip-link a,
+#skip-link a:visited {
+  position: absolute;
+  display: block;
+  left: 0;
+  top: -500px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+#skip-link a:hover,
+#skip-link a:active,
+#skip-link a:focus {
+  position: static;
+  width: 100%;
+  height: auto;
+  padding: 2px 0 3px 0;
+}
+
+/*
+ * Header
+ */
+#header {
+  font-size: 14px;
+  width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 8px 20px rgba(153, 127, 101, 0.9);
+}
+
+#header .section {
+  background-image: url(/sites/boondockerswelcome.com/files/logoImages/Header-2-faded-with-text.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+#logo /* Wrapping link for logo */ {
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+}
+
+#logo img {
+  vertical-align: bottom;
+}
+
+#name-and-slogan /* Wrapper for website name and slogan */ {
+}
+
+h1#site-name,
+div#site-name /* The name of the website */ {
+  margin: 0px 210px;
+  padding: .6em 0 0 0;
+  font-size: 4em;
+  font-family: Georgia, "Times New Roman", Serif;
+  line-height: 1em;
+  white-space: nowrap;
+}
+
+#site-name a:link,
+#site-name a:visited {
+  color: #000;
+  text-decoration: none;
+  text-shadow: 2px -2px 20px #ffffff;
+  visibility: hidden;
+}
+
+#site-name a:hover,
+#site-name a:focus {
+}
+
+#site-slogan /* The slogan (or tagline) of a website */ {
+  margin: 0px 210px;
+  font-size: 2em;
+  font-family: Verdana, Geneva, Sans-serif;
+  line-height: 1.3em;
+  white-space: nowrap;
+  text-shadow: 2px -2px 10px #ffffff;
+  visibility: hidden;
+}
+
+.region-header /* Wrapper for any blocks placed in the header region */ {
+  clear: none;
+}
+
+/*
+ * Main (container for everything else)
+ */
+#main-wrapper {
+}
+
+#main {
+}
+
+#main p
+{
+  font-size: 1em;
+  font-family: Verdana, Geneva, Sans-serif;
+}
+
+/*
+ * Content
+ */
+#content {
+  margin-top: 0;
+}
+
+#content .section {
+  margin: 0 auto !important;
+  padding: 10px;
+  width: 980px;
+  background-color: #dddddd;
+  box-shadow: 0 8px 20px rgba(153, 127, 101, 0.9);
+}
+
+.section-searchlistings #content .section
+{
+  display: table;
+}
+
+#mission /* The mission statement of the site (displayed on homepage) */ {
+}
+
+.region-content-top /* Wrapper for any blocks placed in the "content top" region */ {
+}
+
+.breadcrumb /* The path to the current page in the form of a list of links */ {
+  padding-bottom: 0; /* Undo system.css */
+}
+
+h1.title /* The title of the page */
+{
+  margin 0;
+  text-transform: capitalize;
+}
+
+h2.title, /* Block title or the title of a piece of content when it is given in a list of content */
+h3.title /* Comment title */ {
+  margin: 0;
+}
+
+tr.even /* Some tables have rows marked even or odd. */ {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+tr.odd {
+  /* background-color: #eee; */ /* Drupal core uses a #eee background */
+}
+
+div.messages /* Important messages (status, warning, and error) for the user. See also the declarations in messages.css. */ {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 5px 1em;
+}
+
+div.messages ul li
+{
+  padding: 3px;
+}
+
+.messages a:link,
+.messages a:visited
+{
+  color: blue;
+}
+
+div.status /* Normal priority messages */ {
+}
+
+div.warning,
+tr.warning /* Medium priority messages */ {
+  /* border: 1px solid #f0c020; */ /* Drupal core uses: 1px solid #f0c020 */
+}
+
+div.error,
+tr.error /* High priority messages. See also the .error declaration below. */ {
+}
+
+.error /* Errors that are separate from div.messages status messages. */ {
+  /* color: #e55; */ /* Drupal core uses a #e55 background */
+}
+
+.warning /* Warnings that are separate from div.messages status messages. */ {
+  /* color: #e09010; */ /* Drupal core uses a #e09010 background */
+}
+
+div.tabs /* See also the tabs.css file. */ {
+}
+
+.help /* Help text on a page */ {
+  margin: 1em 0;
+}
+
+.more-help-link /* Link to more help */ {
+  font-size: 0.85em;
+  text-align: right;
+}
+
+#content-area /* Wrapper for the actual page content */ {
+}
+
+.not-front #content-area
+/*
+.section-searchlistings #content-area,
+.section-contact #content-area,
+.section-user #content-area,
+.section-node-add #content-area,
+.section-searchbyname #content-area */
+{
+  background-color: #dddddd;
+  height: auto;
+  padding: 10px;
+  border: none;
+}
+
+.section-searchlistings #content-area
+{
+  /*height: 620px; */
+}
+
+/* pages with tabs */
+.section-user #content-area,
+.section-messages #content-area
+{
+  border: 1px #bbbbbb solid;
+  margin: -10px 0 0; 
+}
+
+/* non-content pages that need borders */
+.section-my-bookmarked-users #content-area,
+.section-searchbyname #content-area,
+.section-node-add #content-area
+{
+  border: 1px #bbbbbb solid;
+}
+
+
+.section-content #content-area
+{
+  margin: -15px 0 0;
+}
+
+.section-searchbylocationform #content-area .pane-node-content .pane-content,
+.section-content #content-area .pane-content .field
+{
+  padding: 10px;
+}
+
+
+ul.links /* List of links */ {
+  margin: 1em 0;
+  padding: 0;
+}
+
+ul.links.inline {
+  margin: 0;
+  display: inline;
+}
+
+ul.links li {
+  display: inline;
+  list-style-type: none;
+  padding: 0 0.5em;
+}
+
+.pager /* A list of page numbers when more than 1 page of content is available */ {
+  clear: both;
+  margin: 1em 0;
+  text-align: center;
+}
+
+.pager a,
+.pager strong.pager-current /* Each page number in the pager list */ {
+  padding: 0.5em;
+}
+
+.feed-icons /* The links to the RSS or Atom feeds for the current list of content */ {
+  margin: 1em 0;
+}
+
+.more-link /* Aggregator, blog, and forum more link */ {
+  text-align: right; /* LTR */
+}
+
+.region-content-bottom /* Wrapper for any blocks placed in the "content bottom" region */ {
+}
+
+/*
+ * First sidebar (on left in LTR languages, on right in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-first
+ * (see the layout.css file.)
+ */
+.region-sidebar-first {
+}
+
+.region-sidebar-first .section {
+}
+
+/*
+ * Second sidebar (on right in LTR languages, on left in RTL)
+ *
+ * Remember to NOT add padding or margin to your .region-sidebar-second
+ * (see the layout.css file.)
+ */
+.region-sidebar-second {
+}
+
+.region-sidebar-second .section {
+}
+
+/*
+ * Footer
+ */
+#footer {
+}
+
+#footer .section {
+}
+
+#footer-message /* Wrapper for the footer message from Drupal's "Site information"
+                   and for any blocks placed in the footer region */ {
+}
+
+.region-footer {
+}
+
+/*
+ * Closure
+ */
+.region-page-closure /* Wrapper for any blocks placed in the closure region */ {
+}
+
+/*
+ * Drupal boxes
+ *
+ * Wrapper for Comment form, Comment viewing options, Menu admin, and
+ * Search results.
+ */
+.box /* Wrapper for box */ {
+}
+
+.box h2 /* Box title */ {
+}
+
+.box .content /* Box's content wrapper */ {
+}
+
+/*
+ * Markup free clearing (See: http://www.positioniseverything.net/easyclearing.html )
+ */
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/**
+ * Hide elements from all users.
+ *
+ * Used for elements which should not be immediately displayed to any user. An
+ * example would be a collapsible fieldset that will be expanded with a click
+ * from a user. The effect of this class can be toggled with the jQuery show()
+ * and hide() functions.
+ */
+.element-hidden {
+  display: none;
+}
+
+/**
+ * Hide elements visually, but keep them available for screen-readers.
+ *
+ * Used for information required for screen-reader users to understand and use
+ * the site where visual display is undesirable. Information provided in this
+ * manner should be kept concise, to avoid unnecessary burden on the user. Must
+ * not be used for focusable elements (such as links and form elements) as this
+ * causes issues for keyboard only or voice recognition users. "!important" is
+ * used to prevent unintentional overrides.
+ */
+.element-invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+  .page-membership-products h2.pane-title {
+    height: 0px;
+    visibility: hidden;
+  }
+
+  .page-membership-products .pane-node-content {
+    border: none;
+  }
+
+

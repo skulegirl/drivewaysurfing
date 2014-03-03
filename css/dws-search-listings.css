@@ -1,0 +1,109 @@
+/**Search Form formatting **/
+  #edit-location-distance-wrapper
+  {
+    display: inline;
+  }
+
+  #edit-location-distance-unit-wrapper
+  {
+    display: inline;
+  }
+
+/**Search Result formatting **/
+  .section-searchlistings .attachment-before
+  {
+    padding: 0px 10px 0px 0px;
+  }
+
+  .view-display-id-attachment_1
+  {
+    padding: 10px 0;
+    margin: 0 0 -10px 0;
+  }
+
+  .search-results .view-content .item-list
+  {
+    width: 28%;
+    height: 600px;
+    overflow: auto;
+    padding: 5px;
+    float: left;
+    font-size: 12px;
+    /* line-height: 1.3em; */
+  }
+  .search-results ul
+  {
+    list-style-type: none;
+  }
+
+  .search-results .item-list ul li 
+  {
+    padding: 0 0 10px 0;
+  }
+
+  .search-results .item-list .field-content
+  {
+    font-weight: bold;
+    text-transform: capitalize;
+  } 
+
+  .attachment .search-results .item-list .pager
+  {
+    display: none;
+  }
+
+  .search-results .attachment 
+  {
+    float: right;
+    width: 69%;
+  }
+
+  .search-results .item-list .pager
+  {
+    color: blue;
+    font-size: 20px;
+    padding: 20px 0 0 0;
+  }
+
+  .search-results .item-list .pager a
+  {
+    color: blue;
+    font-size: 20px;
+  }
+
+  .search-results .views-field-field-user-photo-fid 
+  { 
+    float: right;
+/*    width: 200px; */
+    padding: 5px;
+    overflow: hidden;
+  }
+
+  #Search-The-Boondocking-Listings {
+  }
+
+  #Search-The-Boondocking-Listings table {
+    border: none;
+  }
+
+  #Search-The-Boondocking-Listings table td {
+    padding: 5px;    
+  } 
+
+  #Search-The-Boondocking-Listings img {
+    border: medium ridge gray;
+  }
+
+  .search-button {
+    background-color: green;
+    color: white;
+    font-family: Verdana,Geneva,Sans-serif;
+    font-size: large;
+    line-height: 2em;
+    padding: 10px 30px;
+    width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+

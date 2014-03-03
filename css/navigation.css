@@ -1,0 +1,108 @@
+/**
+ * @file
+ * Navigation Styling
+ *
+ * Default menu styling (ul.menu) is defined in system-menus.css.
+ */
+
+
+/*
+ * The active item in a Drupal menu
+ */
+li a.active {
+  color: #000;
+}
+
+/*
+ * Navigation bar
+ */
+#navigation {
+}
+
+.region-navigation {
+}
+
+/*
+ * Primary and Secondary menu links
+ */
+#main-menu {
+}
+
+#secondary-menu {
+}
+
+/*
+ * Menu blocks
+ */
+.block-menu {
+}
+
+/*
+ * "Menu block" blocks. See http://drupal.org/project/menu_block
+ */
+.block-menu_block {
+}
+
+#nice-menu-1 /* "Primary links" block */
+{
+    background-color: #D10303;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin: 150px 200px 10px;
+    text-shadow: 2px -1px 0px #000000;
+    width: 800px;
+    padding: 0px;
+    position: absolute;
+}
+
+#nice-menu-1 ul
+{
+  background-color: #d10303;
+  font-size: 1.4em;
+  line-height: 2em;
+}
+
+#nice-menu-1 li
+{
+  background-color: #d10303;
+  list-style-image: none;
+  list-style-type: none;
+  display: inline;
+  margin: 0 0.2em;	
+      border: 0;
+}
+
+#nice-menu-1 ul li {
+float: left;
+font-size: 0.7em;
+line-height: 1em;
+margin: 0;
+padding: 0;
+}
+
+ul.nice-menu-down li.menuparent {
+  padding: 0 12px 0 0;
+}
+
+#nice-menu-1 a
+{
+color: #ffffff;
+font-family: Tahoma, Geneva, Sans-serif;	
+padding: 0.44em;
+border-width: 2px;
+border-color: #d10303;
+border-style: solid;
+text-decoration: none;
+text-transform: uppercase;
+}
+
+#nice-menu-1 a:hover
+{
+  background-color: #ffffff;
+border-width: 2px;
+border-color: #d10303;
+border-style: solid;
+  color: #d10303;
+text-shadow: none;
+}
+

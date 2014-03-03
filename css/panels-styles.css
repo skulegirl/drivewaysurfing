@@ -1,0 +1,276 @@
+/**
+ * @file
+ * Panels Styling
+ */
+
+  .rounded-corner
+  {
+    padding: 5px 0;
+  }
+
+  .rounded-corner .wrap-corner .r-edge
+  {
+    padding: 5px 10px;
+  }
+
+  .panels-flexible-column-22-main
+  {
+    width: 58%
+  }
+
+  .panels-flexible-column-22-1
+  {
+    width: 42%
+  }
+
+  .panels-flexible-region-15-center
+  {
+    width: auto;
+  }
+  .panels-flexible-region-15-right img
+  {
+    height: 60px;
+    margin: -10px;
+  }
+
+  .panels-flexible-27-middle
+  {
+    margin: 0;
+  }
+
+  .panel-pane
+  {
+    background-color: #dddddd;
+    box-shadow: none;
+    border: 1px #bbbbbb solid;
+    margin: 10px 0px;
+    padding: 0 0 10px 0;
+  }
+
+  #NewsletterContent .panel-pane
+  {
+    border: 0;
+  }
+
+  .panel-pane .pane-content
+  {
+    padding: 10px;
+  }
+
+  .panel-1col .pane-content
+  {
+    padding: 0px 10px;
+  }
+
+  .panel-1col .pane-content p
+  {
+    margin: 10px 0;
+  }
+
+  .pane-panels-mini .panel-pane
+  {
+    padding: 0px;
+    border: none;
+  }
+
+  .pane-panels-mini .panel-pane .pane-content
+  {
+    padding: 0px;
+  }
+
+  .pane-panels-mini .panels-flexible-row
+  {
+    padding: 0px;
+  }
+
+  .pane-panels-mini .panel-pane .pane-title
+  {
+    background-color: #dddddd;
+    color: #d10303;
+  }
+
+  .pane-panels-mini #mini-panel-contact_user .pane-content
+  {
+    padding: 0px;
+  }
+
+  .pane-content fieldset.group-ba-details
+  {
+    margin-left: 3px;
+  }
+
+  .pane-fb-likebox-0
+  {
+    border: none;
+    padding: 0;
+  }
+
+  .pane-fb-likebox-0 .pane-content
+  {
+    padding: 0;
+  }
+
+  .panel-3col .panel-col-first
+  {
+    width: 20%;
+  }
+
+  .panel-3col .panel-col
+  {
+    width: 60% !important;
+  }
+
+  .panel-3col .panel-col-last
+  {
+    width: 20% !important;
+  }
+
+  .panel-col .panel-region-separator
+  {
+    padding: 5px;
+  }
+
+  .pane-title, 
+  .pane-views .view-header h2,
+  /*
+  .section-searchlistings #content .section .title,
+  .section-contact #content .section .title,
+  .section-user #content .section .title,
+  .section-content #content .section .title,
+  .section-node-add #content .section .title,
+  .section-searchbyname #content .section .title
+  */
+  .not-front #content .section .title
+  {
+    background-color: #F9C660;
+    color: #d10303; 
+    font-size: 1.1em;
+    padding: 10px 5px;
+    line-height: 1em;
+    margin: 0px;
+  }
+
+  .not-front #content .section .node-type-simplenews .title
+  {
+    background-color: #dddddd;
+  }
+  
+  .section-users #content .section .title
+  { 
+    background-color: #dddddd;
+    font-size: 2em;
+    margin: 0px;
+  }
+
+  .section-users #content .section div.tabs
+  {
+    border-left: none;
+    border-right: none;
+  }
+
+  .section-users #content .section h1.title
+  {
+    color: #d10303;
+  }
+
+  .section-node-add #content .section .help
+  {
+    margin: 0px;
+  }
+
+
+ 
+
+  .panel-pane.pane-title a
+  {
+    color: #d10303;
+  }
+
+  .pane-views .view-header h2
+  {
+    margin: 0px -10px;
+  }
+
+  .node-type-free-file-download #content .section .title
+  {
+    margin: 1em 0.5em;
+  }
+
+  .pane-panels-mini .panel-pane
+  {
+    box-shadow: none;
+    margin: 0px;
+  }
+
+  .boondocking-avail-pane-content p
+  {
+    float: left;
+    display: inline;
+    clear: both;
+  }
+  .pane-user-recommendations-panel-pane-1 h2
+  {
+    font-size: 1.2em !important;
+  }
+
+  .panels-flexible-row-6-1-middle
+  {
+    margin-left: 150px;
+    margin-right: 220px;
+  }
+
+  .panels-flexible-region-6-right
+  {
+    width: 220px;    
+  }
+
+  .panels-flexible-row-6-1-right .rounded-corner .wrap-corner .r-edge 
+  {
+    padding: 5px 16px;
+  }
+
+  #BDWNodeEditPanels .rounded-corner .wrap-corner
+  {
+    background-color: #FFFFCC !important;
+  }
+
+  .pane-user-relationship-blocks-actions ul
+  {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  #panels-ipe-paneid-142 table
+  { 
+    border: none;
+  }
+
+  .panels-flexible-region-22-right
+  {
+    margin: 0 0 0 10px;
+    width: 98%;
+  }
+
+  .pane-user-0 .pane-content
+  {
+    padding: 0px 10px;
+  }
+
+  .pane-user-0 label
+  {
+    font-size: 0.8em;
+  }
+
+  .pane-user-0 ul
+  {
+    padding: 0px;
+    list-style: none;
+    font-size: 0.85em;
+  }
+
+  .pane-user-0 li
+  {
+    padding: 5px 0;
+  }
+
+

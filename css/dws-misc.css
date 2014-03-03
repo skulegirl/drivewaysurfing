@@ -1,0 +1,110 @@
+  td.delta-order
+  {
+    display:none;
+  }
+
+  .bookmark-table td,th
+  {
+    padding: 0px 10px;
+  }
+
+  .addthis_toolbox
+  {
+    padding: 5px 5px 5px 10px;
+  }
+
+  table tr.odd td
+  {
+     background-color: #eeeeee;
+  }
+  table tr.even td
+  {
+     background-color: #ffffff;
+  }
+  table
+  {
+     border: 1px solid #bbbbbb;
+  }
+
+  #google-cse-results {
+    max-height: 1200px;
+    overflow: hidden;
+  }
+
+  #product-sale-block {
+    background-color: #F9C660;
+    padding: 5px;
+    border-radius: 15px;
+  }
+
+  #product-sale-block #call-to-action {
+    color: #d10303;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Sans-serif;
+    font-weight: bold;
+    line-height: 1.4em;
+  }
+
+  #product-sale-block table {
+    border: none;
+  }
+
+  #product-sale-block a:link {
+    text-decoration: none;
+  } 
+
+  #product-sale-block .benefitsText {
+    font-family: Verdana, Geneva, Sans-serif;
+    font-weight: bold;
+  }
+
+  #product-sale-block .benefitsText ul {
+    list-style-image: url("/sites/boondockerswelcome.com/files/media/check.png");
+    line-height: 1.5em;
+  }
+
+  #product-sale-block hr {
+    width: 100px;
+  }
+
+  table.map-panel-buttons {
+    border: none;
+  }
+  table.map-panel-buttons td {
+    padding: 10px;
+  }
+
+  .forum-post-panel-main
+  {
+    min-height: 0px;
+  }
+
+  /* to replicate the stripe button on other submit buttons on the order review page */ 
+  .order-review-table .review-button-row #edit-submit
+  {
+    -moz-user-select: none;
+    background-image: linear-gradient(#28A0E5, #015E94);
+    background: linear-gradient(#7DC5EE, #008CDD 85%, #30A2E4) repeat scroll 0 0 #1275FF;
+    border: 0 none;
+    border-radius: 5px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 12px;
+    position: relative;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .order-review-table .review-button-row table
+  {
+    border: none;
+  } 
+  

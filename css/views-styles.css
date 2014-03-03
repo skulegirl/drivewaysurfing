@@ -1,0 +1,44 @@
+/**
+ * @file
+ * Views Styling
+ */
+
+  .view-user-recommendations .views-row
+  {
+    padding: 10px 0;
+  }
+
+  .view-user-recommendations .field-field-ur-fellow-boondocker
+  {
+    display: none;
+  }
+
+  .views-row .node-type-testimonial h2.title
+  {
+    font-size: 1.2em;
+    padding: 10px 0px;
+  }
+
+  .views-row .node-type-testimonial .node_read_more
+  {
+    display: block;
+    text-align: right;
+  }
+
+  .views-field-field-user-your-rig-photo-fid
+  {
+    width: 100%;
+  }
+
+  .views-label
+  {
+    font-weight: bold;
+  }
+
+  .views_slideshow_controls a
+  {
+    padding: 5px;
+    text-decoration: none;
+  }
+
+

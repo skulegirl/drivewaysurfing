@@ -1,0 +1,172 @@
+/** Custom ids for drivewaysurfing theme **/
+  #Login,
+  #Logout
+  {
+    float: right;
+    margin: 10px 10px 5px 5px;
+    width: 130px;
+    font-size: 1.5em;
+    font-weight: bold;    
+    font-family: Tahoma, Geneva, Sans-serif;
+    text-align: center;
+  }
+  
+  #Login a,
+  #Logout a
+  {
+    text-decoration: none;
+    text-shadow: 1px -1px 10px #ffffff; 
+    color: #000000;
+    line-height: 1em;
+  }
+  
+  #Login center,
+  #Logout center
+  {
+    margin: 0 0 -15px 0;
+  }
+
+  .join-now-button {
+    background-color: #D10303;
+    color: white;
+    font-family: Verdana,Geneva,Sans-serif;
+    font-size: large;
+    line-height: 2em;
+    padding: 7px;
+    width: 100px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+  .map-join-button {
+    text-align: center;
+  }
+
+  .map-join-button .join-now-button {
+    padding: 10px 70px;
+  }
+
+  .testimonial-quote,
+  .testimonial-data .node-type-testimonial {
+    font-family: Georgia, Times New Roman, Serif;
+    font-size: large;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid grey;
+    background: white;
+  }
+
+  .testimonial-quote .quote-title {
+    padding: 5px 40px;
+    color: #d01030;
+  }
+
+  .testimonial-quote .quote-text {
+    padding: 0px 40px;
+  }
+  .testimonial-data .node-type-testimonial h2.title {
+    padding: 10px 40px;
+  }
+
+  .testimonial-quote .quote-title,
+  .testimonial-data .node-type-testimonial h2.title {
+    background-image: url("/sites/boondockerswelcome.com/files/media/punctuation-marks-quotation-marks-red-left.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+  }
+
+  .testimonial-data .node-type-testimonial h2.title {
+    pointer-events: none;
+    cursor: default;
+  }
+
+  .testimonial-data .node-type-testimonial h2.title a:link,
+  .testimonial-data .node-type-testimonial h2.title a:visited {
+    text-decoration: none;
+    color: #d01030;
+  } 
+
+  .testimonial-quote .quote-author,
+  .testimonial-data .node-type-testimonial .content {
+    padding: 10px 40px;
+    margin: 0px 10px;
+    background-image: url("/sites/boondockerswelcome.com/files/media/punctuation-marks-quotation-marks-red-right.png");
+    background-repeat: no-repeat;
+    background-size: 35px;
+    background-position: right bottom;
+  }
+
+  .testimonial-quote .quote-author {
+    text-align: right;
+  }
+
+  .testimonial-data .node-type-testimonial .content p {
+    font-family: Georgia, Times New Roman, Serif !important;
+    font-size: large;
+  }  
+  
+  .testimonial-data .node-type-testimonial .meta {
+    padding: 0px 40px;
+    font-style: italic;
+  }
+
+  #testimonial-footer {
+    font-family: Georgia, Times New Roman, Serif;
+    font-size: larger;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: 1px solid grey;
+    background: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  #as-seen-in {
+    padding: 0px;
+  }
+ 
+  #as-seen-in .pane-content {
+    text-align: center;
+  }
+
+  #as-seen-in .pane-content br {
+    margin: 8px 0px;
+  }
+
+  .product-sale-text {
+    font-size: large;
+    font-variant: small-caps;
+    text-align: center;
+  }
+
+  .mainBottom {
+  }
+
+  .mainBottom p {
+    background: none repeat scroll 0 0 #D10303;
+    color: white;
+    font-family: Georgia !important;
+    font-size: large !important;
+    font-variant: small-caps;
+    padding: 25px;
+    text-align: center;
+  }
+
+  .mainBottom a,
+  .mainBottom a:visited {
+    color: white;
+    padding: 3px;
+  }
+
+  .tour-button {
+    background-color: blue;
+    color: white;
+    font-family: Verdana,Geneva,Sans-serif;
+    font-size: large;
+    line-height: 2em;
+    padding: 10px 90px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+
+

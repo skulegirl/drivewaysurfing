@@ -1,0 +1,161 @@
+/**
+ * @file
+ * Block Styling
+ */
+
+
+.block /* Block wrapper */ {
+  margin-bottom: 1em;
+}
+
+.block.first /* The first block in the region */ {
+}
+
+.block.last /* The last block in the region */ {
+}
+
+.block.region-odd /* Zebra striping for each block in the region */ {
+}
+
+.block.region-even /* Zebra striping for each block in the region */ {
+}
+
+.block.odd /* Zebra striping independent of each region */ {
+}
+
+.block.even /* Zebra striping independent of each region */ {
+}
+
+.region-count-1 /* Incremental count for each block in the region */ {
+}
+
+.count-1 /* Incremental count independent of each region */ {
+}
+
+.block h2.title /* Block title */ {
+}
+
+.block .content /* Block's content wrapper */ {
+}
+
+#block-aggregator-category-1 /* Block for the latest news items in the first category */ {
+}
+
+#block-aggregator-feed-1 /* Block for the latest news items in the first feed */ {
+}
+
+#block-block-1 /* First administrator-defined block */ {
+}
+
+#block-blog-0 /* "Recent blog posts" block */ {
+}
+
+#block-book-0 /* "Book navigation" block for the current book's table of contents */ {
+}
+
+#block-comment-0 /* "Recent comments" block */ {
+}
+
+#block-forum-0 /* "Active forum topics" block */ {
+}
+
+#block-forum-1 /* "New forum topics" block */ {
+}
+
+#block-menu-primary-links /* "Primary links" block */ {
+}
+
+#block-menu-secondary-links /* "Secondary links" block */ {
+}
+
+#block-menu-primary-links ul
+{
+  background-color: #d10303;
+  font-size: 1.4em;
+  line-height: 2em;
+  margin: 20px 200px 10px 200px;
+}
+
+#block-menu-primary-links li
+{
+  list-style-image: none;
+  list-style-type: none;
+  display: inline;
+  padding: 0.5em 0;	
+}
+
+#block-menu-primary-links a
+{
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", Serif;	
+  padding: 0.44em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#block-menu-primary-links a:hover
+{
+  background-color: #ffffff;
+  color: #d10303;
+}
+
+#block-menu-secondary-links li
+{
+  font-size: 12px;
+  display: inline;
+  padding: 0 5px 0 1px;
+  border-right-style: solid;
+  border-width: 1px;
+  border-color: #D10303;
+
+}
+
+#block-menu-secondary-links li.last
+{
+  border-style: none;
+}
+
+
+#block-menu-secondary-links ul
+{
+  text-align: center;
+}
+
+#block-menu-secondary-links a
+{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #d10303;
+}
+
+#block-nice_menus-1 .block-inner .content
+{
+  overflow: hidden;
+}
+  
+#block-node-0 /* "Syndicate" block for primary RSS feed */ {
+}
+
+#block-poll-0 /* "Most recent poll" block */ {
+}
+
+#block-profile-0 /* "Author information" block for the profile of the page's author */ {
+}
+
+#block-search-0 /* "Search form" block */ {
+}
+
+#block-statistics-0 /* "Popular content" block */ {
+}
+
+#block-user-0 /* "User login form" block */ {
+}
+
+#block-user-1 /* "Navigation" block for Drupal navigation menu */ {
+}
+
+#block-user-2 /* "Who's new" block for a list of the newest users */ {
+}
+
+#block-user-3 /* "Who's online" block for a list of the online users */ {
+}
