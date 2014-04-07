@@ -31,7 +31,7 @@
 }
 
 .form-item .description /* The descriptive help text (separate from the label) */ {
-  font-size: 0.95em;
+  font-size: 0.84em;
 }
 
 .form-checkboxes .form-item,
@@ -141,4 +141,75 @@ form tbody th {
   width: 11em;
 }
 
+#invite-form .form-item label
+{
+  display: block;
+  float: left;
+  width: 120px;
+  padding-right: 20px;
+}
 
+#invite-form input
+{
+  display: block;
+  float: left;
+}
+
+#invite-form .description
+{
+  display: inline-block;
+  float: none;
+  margin-left: 140px;
+}
+
+#invite-form .invite-message .opening
+{
+  float: left;
+  width: 600px;
+}
+
+#invite-form .invite-message .edit-message-wrapper .resizeable-textarea
+{
+  margin-left: 140px;
+}
+
+#invite-form .resizable-textarea
+{
+  margin-left: 140px;
+  width: auto;
+}
+
+#invite-form .resizable-textarea textarea
+{
+  display: inline;
+  width: auto;
+}
+
+#invite-form #edit-message-wrapper 
+{
+  width: 740px;
+}
+
+#invite-form #edit-message-wrapper .resizable-textarea
+{
+  clear: left;
+}
+
+
+#invite-form #edit-message-wrapper .resizable-textarea textarea
+{
+  width: 600px;
+}
+
+#invite-form .form-submit
+{
+  float: none;
+  color: blue;
+  font-size: large;
+  margin-left: 140px;
+}
+
+#invite-form .opening > p
+{
+  margin-top: 0;
+}
