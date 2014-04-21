@@ -94,9 +94,10 @@
     padding: 0px;
   }
 
-  .pane-content fieldset.group-ba-details
+  .pane-content .group-ba-details
   {
     margin-left: 3px;
+    font-family: Tahoma,Verdana,Arial,Helvetica,"Bitstream Vera Sans",sans-serif;
   }
 
   .pane-fb-likebox-0
@@ -251,24 +252,24 @@
     width: 98%;
   }
 
-  .pane-user-0 .pane-content
+  .pane-user-login .pane-content
   {
     padding: 0px 10px;
   }
 
-  .pane-user-0 label
+  .pane-user-login label
   {
     font-size: 0.8em;
   }
 
-  .pane-user-0 ul
+  .pane-user-login ul
   {
     padding: 0px;
     list-style: none;
     font-size: 0.85em;
   }
 
-  .pane-user-0 li
+  .pane-user-login li
   {
     padding: 5px 0;
   }

@@ -5,7 +5,6 @@
 
 
 .block /* Block wrapper */ {
-  margin-bottom: 1em;
 }
 
 .block.first /* The first block in the region */ {
@@ -65,7 +64,7 @@
 #block-menu-primary-links /* "Primary links" block */ {
 }
 
-#block-menu-secondary-links /* "Secondary links" block */ {
+#block-menu-secondary-menu /* "Secondary links" block */ {
 }
 
 #block-menu-primary-links ul
@@ -99,7 +98,7 @@
   color: #d10303;
 }
 
-#block-menu-secondary-links li
+#block-menu-secondary-menu li
 {
   font-size: 12px;
   display: inline;
@@ -110,18 +109,18 @@
 
 }
 
-#block-menu-secondary-links li.last
+#block-menu-secondary-menu li.last
 {
   border-style: none;
 }
 
 
-#block-menu-secondary-links ul
+#block-menu-secondary-menu ul
 {
   text-align: center;
 }
 
-#block-menu-secondary-links a
+#block-menu-secondary-menu a
 {
   text-decoration: none;
   text-transform: capitalize;

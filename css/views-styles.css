@@ -13,13 +13,13 @@
     display: none;
   }
 
-  .views-row .node-type-testimonial h2.title
+  .views-row .node-testimonial h2.title
   {
     font-size: 1.2em;
     padding: 10px 0px;
   }
 
-  .views-row .node-type-testimonial .node_read_more
+  .views-row .node-testimonial .node_read_more
   {
     display: block;
     text-align: right;

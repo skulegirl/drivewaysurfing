@@ -5,5 +5,5 @@
 <p><?php print $intro_text; ?></p>
 
 <div class="user-login-form-wrapper">
-  <?php print $rendered; ?>
+  <?php print drupal_render_children($form); ?> 
 </div>

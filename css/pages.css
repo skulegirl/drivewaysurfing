@@ -76,6 +76,7 @@ body {
 
 #logo img {
   vertical-align: bottom;
+  display: none;
 }
 
 #name-and-slogan /* Wrapper for website name and slogan */ {

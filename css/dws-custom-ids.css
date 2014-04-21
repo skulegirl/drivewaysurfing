@@ -47,49 +47,50 @@
   }
 
   .testimonial-quote,
-  .testimonial-data .node-type-testimonial {
-    font-family: Georgia, Times New Roman, Serif;
-    font-size: large;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: 1px solid grey;
-    background: white;
+  .testimonial-data .node-testimonial {
+    font-family: Georgia, Times New Roman, Serif !important;
+    font-size: large !important;
+    padding: 10px 20px !important;
+    margin: 10px 0 !important;
+    border: 1px solid grey !important;
+    background: white !important;
   }
 
   .testimonial-quote .quote-title {
-    padding: 5px 40px;
-    color: #d01030;
+    padding: 5px 40px !important;
+    color: #d01030 !important;
   }
 
   .testimonial-quote .quote-text {
-    padding: 0px 40px;
+    padding: 0px 40px !important;
   }
-  .testimonial-data .node-type-testimonial h2.title {
-    padding: 10px 40px;
+  .testimonial-data .node-testimonial h2.node-title {
+    padding: 10px 40px !important;
   }
 
   .testimonial-quote .quote-title,
-  .testimonial-data .node-type-testimonial h2.title {
+  .testimonial-data .node-testimonial h2.node-title {
     background-image: url("/sites/boondockerswelcome.com/files/media/punctuation-marks-quotation-marks-red-left.png");
     background-repeat: no-repeat;
     background-size: 35px;
   }
 
-  .testimonial-data .node-type-testimonial h2.title {
-    pointer-events: none;
-    cursor: default;
+  .testimonial-data .node-testimonial h2.node-title {
+    pointer-events: none !important;
+    cursor: default !important;
   }
 
-  .testimonial-data .node-type-testimonial h2.title a:link,
-  .testimonial-data .node-type-testimonial h2.title a:visited {
-    text-decoration: none;
-    color: #d01030;
-  } 
+
+  .testimonial-data .node-testimonial h2.node-title a:link,
+  .testimonial-data .node-testimonial h2.node-title a:visited {
+    text-decoration: none !important;
+    color: #d01030 !important;
+  }
 
   .testimonial-quote .quote-author,
-  .testimonial-data .node-type-testimonial .content {
-    padding: 10px 40px;
-    margin: 0px 10px;
+  .testimonial-data .node-testimonial .content {
+    padding: 10px 40px !important;
+    margin: 0px 10px !important;
     background-image: url("/sites/boondockerswelcome.com/files/media/punctuation-marks-quotation-marks-red-right.png");
     background-repeat: no-repeat;
     background-size: 35px;
@@ -97,28 +98,28 @@
   }
 
   .testimonial-quote .quote-author {
-    text-align: right;
+    text-align: right !important;
   }
 
-  .testimonial-data .node-type-testimonial .content p {
+  .testimonial-data .node-testimonial .content p {
     font-family: Georgia, Times New Roman, Serif !important;
-    font-size: large;
+    font-size: large !important;
   }  
   
-  .testimonial-data .node-type-testimonial .meta {
-    padding: 0px 40px;
-    font-style: italic;
+  .testimonial-data .node-testimonial .submitted {
+    padding: 0px 40px !important;
+    font-style: italic !important;
   }
 
   #testimonial-footer {
-    font-family: Georgia, Times New Roman, Serif;
-    font-size: larger;
-    padding: 10px 20px;
-    margin: 10px 0;
-    border: 1px solid grey;
-    background: white;
-    padding: 20px;
-    text-align: center;
+    font-family: Georgia, Times New Roman, Serif !important;
+    font-size: larger !important;
+    padding: 10px 20px !important;
+    margin: 10px 0 !important;
+    border: 1px solid grey !important;
+    background: white !important;
+    padding: 20px !important;
+    text-align: center !important;
   }
 
   #as-seen-in {
@@ -169,4 +170,11 @@
     text-decoration: none;
   }
 
-
+  .view-bda-details-d7 {
+    border: 1.83333px groove  #f0f0f0;
+    margin-left: 3px;
+    margin-right: 0px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 8px;
+  }

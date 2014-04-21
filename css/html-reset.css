@@ -148,7 +148,6 @@ blockquote {
  *
  * We need to standardize the list item indentation.
  */
-ul,
 ol {
   margin-left: 0;
   padding-left: 2em; /* LTR */

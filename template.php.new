@@ -70,7 +70,7 @@ drupal_add_js(drupal_get_path('theme', 'drivewaysurfing') . '/js/gmap_remember_z
 /**
  * Implementation of HOOK_theme().
  */
-function drivewaysurfing_theme($existing, $type, $theme, $path) {
+function drivewaysurfing_theme(&$existing, $type, $theme, $path) {
   $hooks = zen_theme($existing, $type, $theme, $path);
   // Add your theme hooks like this:
   /*
@@ -81,17 +81,11 @@ function drivewaysurfing_theme($existing, $type, $theme, $path) {
         'render element' => 'form',
         'path' => drupal_get_path('theme', 'drivewaysurfing') . '/templates',
         'template' => 'user-login',
-        'preprocess functions' => array(
-          'drivewaysurfing_preprocess_user_login'
-        ),
         );
   $hooks['user_pass'] = array(
         'render element' => 'form',
         'path' => drupal_get_path('theme', 'drivewaysurfing') . '/templates',
         'template' => 'user-pass',
-        'preprocess functions' => array(
-          'drivewaysurfing_preprocess_user_pass'
-        ),
         );
   return $hooks;
 }
@@ -181,12 +175,12 @@ function drivewaysurfing_preprocess_block(&$vars, $hook) {
  */
 function drivewaysurfing_preprocess_user_login(&$variables) {
    $variables['intro_text'] = t('Login to your BoondockersWelcome account');
-   //$variables['rendered'] = drupal_render($variables['form']);
+   $variables['rendered'] = drupal_render($variables['form']);
 }
 
 function drivewaysurfing_preprocess_user_pass(&$variables) {
    $variables['intro_text'] = t('Forgotten your password? No problem. Enter your uesrname or email address below, and we\'ll send a one-time login link to the email addres you have listed in your account. From there you can reset your password to whatever you wish.');
-   //$variables['rendered'] = drupal_render($variables['form']);
+   $variables['rendered'] = drupal_render($variables['form']);
 }
 
 /**
