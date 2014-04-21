@@ -127,6 +127,12 @@ if ($_GET["format"] == "lightbox2" ||
 </head>
 <body class="<?php print $classes; ?>">
 
+<?php if($site_status_message): ?>
+  <div id="site-status">
+   <?php print $site_status_message; ?><?php if ($site_status_link): ?> <?php print $site_status_link; ?><?php endif; ?>
+  </div>
+<?php endif; ?>
+
   <div id="page-wrapper"><div id="page">
 
     <div id="header"><div class="section clearfix">

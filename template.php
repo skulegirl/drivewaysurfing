@@ -117,6 +117,9 @@ function drivewaysurfing_preprocess_page(&$vars, $hook) {
            $vars['title'] = '';
          }
     }
+
+    $vars['site_status_message'] = "Boondockers Welcome has taken all necessary steps to respond to the Hearbleed OpenSSL security threat. All transactions performed on this site remain full secure. While we have no indication that we were compromised before the security patch was applied, users may want to change their passwords at their discretion.";
+    $vars['site_status_link'] = "<a href='http://www.theglobeandmail.com/technology/new-web-security-threat-i-would-change-every-password-everywhere/article17892756/' target='_blank'>See this article for more information (aimed at non-techies).</a>";
 }
 
 /**
