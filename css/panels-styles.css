@@ -13,12 +13,12 @@
     padding: 5px 10px;
   }
 
-  .panels-flexible-column-22-main
+  #mini-panel-boondocking_available .panels-flexible-column-first
   {
     width: 58%
   }
 
-  .panels-flexible-column-22-1
+  #mini-panel-boondocking_available .panels-flexible-column-last
   {
     width: 42%
   }
