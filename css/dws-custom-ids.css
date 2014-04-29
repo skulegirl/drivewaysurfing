@@ -178,3 +178,24 @@
     margin-bottom: 16px;
     padding: 8px;
   }
+
+  #HomeMainHeadline {
+    font-family: Verdana,Geneva,Sans-serif;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 3px 0;
+  }
+  #HomeSubHeadline {
+    font-family: Verdana,Geneva,Sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 2px 0;
+  }
+  #HomeMainText {
+    font-family: Verdana,Geneva,Sans-serif;
+    font-size: 1em;
+    text-align: center;
+    padding: 3px 0 15px;
+  }
