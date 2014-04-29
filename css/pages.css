@@ -420,12 +420,12 @@ ul.links li {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-  .page-membership-products h2.pane-title {
+  .node-type-page.section-membership-products h2.pane-title {
     height: 0px;
     visibility: hidden;
   }
 
-  .page-membership-products .pane-node-content {
+  .node-type-page.section-membership-products .pane-node-content {
     border: none;
   }
 
