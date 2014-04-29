@@ -231,16 +231,16 @@ div.tabs /* See also the tabs.css file. */ {
   text-align: right;
 }
 
-#content-area /* Wrapper for the actual page content */ {
+.region.region-content /* Wrapper for the actual page content */ {
 }
 
-.not-front #content-area
+.not-front .region.region-content
 /*
-.section-searchlistings #content-area,
-.section-contact #content-area,
-.section-user #content-area,
-.section-node-add #content-area,
-.section-searchbyname #content-area */
+.section-searchlistings .region.region-content,
+.section-contact .region.region-content,
+.section-user .region.region-content,
+.section-node-add .region.region-content,
+.section-searchbyname .region.region-content */
 {
   background-color: #dddddd;
   height: auto;
@@ -248,35 +248,35 @@ div.tabs /* See also the tabs.css file. */ {
   border: none;
 }
 
-.section-searchlistings #content-area
+.section-searchlistings .region.region-content
 {
   /*height: 620px; */
 }
 
 /* pages with tabs */
-.section-user #content-area,
-.section-messages #content-area
+.section-user .region.region-content,
+.section-messages .region.region-content
 {
   border: 1px #bbbbbb solid;
-  margin: -10px 0 0; 
+  margin: 0;  
 }
 
 /* non-content pages that need borders */
-.section-my-bookmarked-users #content-area,
-.section-searchbyname #content-area,
-.section-node-add #content-area
+.section-my-bookmarked-users .region.region-content,
+.section-searchbyname .region.region-content,
+.section-node-add .region.region-content
 {
   border: 1px #bbbbbb solid;
 }
 
 
-.section-content #content-area
+.section-content .region.region-content
 {
   margin: -15px 0 0;
 }
 
-.section-searchbylocationform #content-area .pane-node-content .pane-content,
-.section-content #content-area .pane-content .field
+.section-searchbylocationform .region.region-content .pane-node-content .pane-content,
+.section-content .region.region-content .pane-content .field
 {
   padding: 10px;
 }
