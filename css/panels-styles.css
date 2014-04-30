@@ -23,11 +23,11 @@
     width: 42%
   }
 
-  .panels-flexible-region-15-center
+  #mini-panel-messages .panels-flexible-region-new-center
   {
     width: auto;
   }
-  .panels-flexible-region-15-right img
+  #mini-panel-messages .panels-flexible-region-new-right img
   {
     height: 60px;
     margin: -10px;
