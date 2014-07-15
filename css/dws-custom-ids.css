@@ -199,3 +199,8 @@
     text-align: center;
     padding: 3px 0 15px;
   }
+
+  .loc-error {
+    padding: 10px 0;
+    color: #cc0000;
+  }

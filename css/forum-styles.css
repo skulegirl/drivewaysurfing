@@ -1,0 +1,16 @@
+/**
+ * @file
+ * Forum Styling
+ */
+
+.forum-node-create-links-top {
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.node-type-forum #content .section .title {
+  background-color: inherit;
+  color: inherit;
+}
+
+

@@ -78,21 +78,21 @@ function drivewaysurfing_theme($existing, $type, $theme, $path) {
   */
   // @TODO: Needs detailed comments. Patches welcome!
   $hooks['user_login'] = array(
-        'render element' => 'form',
-        'path' => drupal_get_path('theme', 'drivewaysurfing') . '/templates',
-        'template' => 'user-login',
-        'preprocess functions' => array(
-          'drivewaysurfing_preprocess_user_login'
-        ),
-        );
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'drivewaysurfing') . '/templates',
+    'template' => 'user-login',
+    'preprocess functions' => array(
+      'drivewaysurfing_preprocess_user_login'
+    ),
+  );
   $hooks['user_pass'] = array(
-        'render element' => 'form',
-        'path' => drupal_get_path('theme', 'drivewaysurfing') . '/templates',
-        'template' => 'user-pass',
-        'preprocess functions' => array(
-          'drivewaysurfing_preprocess_user_pass'
-        ),
-        );
+    'render element' => 'form',
+    'path' => drupal_get_path('theme', 'drivewaysurfing') . '/templates',
+    'template' => 'user-pass',
+    'preprocess functions' => array(
+      'drivewaysurfing_preprocess_user_pass'
+    ),
+  );
   return $hooks;
 }
 
@@ -202,4 +202,69 @@ function drivewaysurfing_filter_tips_more_info() { return ''; }
 */
 function drivewaysurfing_filter_tips($tips, $long = false, $extra = '') {
         return '';
+}
+
+function drivewaysurfing_preprocess_views_view__advanced_forum_topic_list(&$variables) {
+  $menu_item = menu_get_item();
+  dd($menu_item, 'menu_item');
+
+  if (!empty($menu_item) && $menu_item['access']) {
+    if (($menu_item['map'][0] == 'forum') && (!empty($menu_item['map'][1]))) {
+      $forum = $menu_item['map'][1];
+      $variables['forum_name'] = $forum->name;
+    }
+  }
+}
+
+/**
+ * Process variables for author-pane-user-picture.tpl.php.
+ *
+ * The $variables array contains the following arguments:
+ * - $variables['account']: User account object.
+ * - $variables['caller']: (optional) String identifying who called the theme
+ *   function. Usually the name of the module but doesn't have to be.
+ * - $variables['picture_preset']: (optional) Imagecache preset to use to format
+ *   the user picture.
+ *
+ * @see author-pane-user-picture.tpl.php
+ */
+function drivewaysurfing_preprocess_author_pane_user_picture(&$variables) {
+  $variables['picture'] = '';
+
+  $account = $variables['account'];
+  $variables['picture_preset'] = 'thumbnail';
+  $filepath = db_query("SELECT fm.uri 
+      FROM file_managed as fm
+      JOIN field_data_field_user_photo as f ON fm.fid = f.field_user_photo_fid 
+      JOIN profile as p ON p.pid = f.entity_id 
+      WHERE p.uid = :uid AND p.type = 'profile'",
+    array(':uid' => $account->uid))->fetchField();
+
+  if (isset($filepath) && !empty($filepath)) {
+    $alt = t("@user's picture", array('@user' => format_username($account)));
+
+    // If the image does not have a valid Drupal scheme (for eg. HTTP),
+    // don't load image styles.
+    dd($filepath, 'filepath');
+    if (module_exists('image') && file_valid_uri($filepath) && $style = ((!empty($variables['picture_preset'])) ? $variables['picture_preset'] : '')) {
+      $variables['picture'] = theme('image_style', array('style_name' => $style, 'path' => $filepath, 'alt' => $alt, 'title' => $alt));
+      $variables['imagecache_used'] = TRUE;
+    }
+    else {
+      $variables['picture'] = theme('image', array('path' => $filepath, 'alt' => $alt, 'title' => $alt));
+      $variables['imagecache_used'] = FALSE;
+    }
+    dd($variables, 'variables');
+
+    if (!empty($account->uid) && user_access('access user profiles')) {
+      $options = array(
+        'attributes' => array('title' => t('View user profile.')),
+        'html' => TRUE,
+      );
+      $variables['picture_link_profile'] = l($variables['picture'], "user/$account->uid", $options);
+    }
+    else {
+      $variables['picture_link_profile'] = FALSE;
+    }
+  }
 }
