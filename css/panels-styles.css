@@ -126,6 +126,11 @@
     width: 60% !important;
   }
 
+  .panel-1col .panel-col
+  {
+    width: 100% !important;
+  }
+
   .panel-3col .panel-col-last
   {
     width: 20% !important;
