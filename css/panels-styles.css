@@ -15,12 +15,12 @@
 
   #mini-panel-boondocking_available .panels-flexible-column-first
   {
-    width: 58%
+    width: 59%
   }
 
   #mini-panel-boondocking_available .panels-flexible-column-last
   {
-    width: 42%
+    width: 41%
   }
 
   #mini-panel-messages .panels-flexible-region-new-center
@@ -54,7 +54,7 @@
 
   .panel-pane .pane-content
   {
-    padding: 10px;
+    padding: 10px 5px;
   }
 
   .panel-1col .pane-content
