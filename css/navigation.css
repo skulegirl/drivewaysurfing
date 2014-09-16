@@ -88,7 +88,7 @@ ul.nice-menu-down li.menuparent {
 {
 color: #ffffff;
 font-family: Tahoma, Geneva, Sans-serif;	
-padding: 0.44em;
+padding: 0.44em 0.15em;
 border-width: 2px;
 border-color: #d10303;
 border-style: solid;

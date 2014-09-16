@@ -206,7 +206,6 @@ function drivewaysurfing_filter_tips($tips, $long = false, $extra = '') {
 
 function drivewaysurfing_preprocess_views_view__advanced_forum_topic_list(&$variables) {
   $menu_item = menu_get_item();
-  dd($menu_item, 'menu_item');
 
   if (!empty($menu_item) && $menu_item['access']) {
     if (($menu_item['map'][0] == 'forum') && (!empty($menu_item['map'][1]))) {
@@ -245,7 +244,6 @@ function drivewaysurfing_preprocess_author_pane_user_picture(&$variables) {
 
     // If the image does not have a valid Drupal scheme (for eg. HTTP),
     // don't load image styles.
-    dd($filepath, 'filepath');
     if (module_exists('image') && file_valid_uri($filepath) && $style = ((!empty($variables['picture_preset'])) ? $variables['picture_preset'] : '')) {
       $variables['picture'] = theme('image_style', array('style_name' => $style, 'path' => $filepath, 'alt' => $alt, 'title' => $alt));
       $variables['imagecache_used'] = TRUE;
@@ -254,7 +252,6 @@ function drivewaysurfing_preprocess_author_pane_user_picture(&$variables) {
       $variables['picture'] = theme('image', array('path' => $filepath, 'alt' => $alt, 'title' => $alt));
       $variables['imagecache_used'] = FALSE;
     }
-    dd($variables, 'variables');
 
     if (!empty($account->uid) && user_access('access user profiles')) {
       $options = array(
