@@ -106,4 +106,7 @@
     text-decoration: none;
   }
 
-
+  .page-searchbystate #content .section
+  {
+    min-height: 800px;
+  }
