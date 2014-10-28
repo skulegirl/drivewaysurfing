@@ -21,6 +21,11 @@
     margin: 0 0 -10px 0;
   }
 
+  .search-results
+  {
+    min-height: 200px;
+  }
+
   .search-results .view-content .item-list
   {
     width: 28%;
