@@ -45,6 +45,15 @@
     line-height: 1.4em;
   }
 
+  
+  #product-renewal-notice {
+    color: #d10303;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 150px;
+  }
+  
+
   #product-sale-block table {
     border: none;
   }
