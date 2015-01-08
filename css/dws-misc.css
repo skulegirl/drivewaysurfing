@@ -58,10 +58,6 @@
     border: none;
   }
 
-  #product-sale-block a:link {
-    text-decoration: none;
-  } 
-
   #product-sale-block .benefitsText {
     font-family: Verdana, Geneva, Sans-serif;
     font-weight: bold;

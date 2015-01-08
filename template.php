@@ -1,4 +1,6 @@
 <?php
+
+// drupal_set_message('Please note: Boondockers Welcome will be going down for emergency maintenance momentarily. We apologize for the inconvenicence, and will endeavour to be back on line as soon as possible.', 'warning');
 /**
  * @file
  * Contains theme override functions and preprocess functions for the theme.
@@ -64,8 +66,8 @@
  * Add javascript files needed for this sub-theme.
  */
 
-drupal_add_js(libraries_get_path('jquery.cookie') . '/jquery.cookie.js', 'core');
-drupal_add_js(drupal_get_path('theme', 'drivewaysurfing') . '/js/gmap_remember_zoom.js','core');
+drupal_add_js(libraries_get_path('jquery.cookie') . '/jquery.cookie.js', 'file');
+drupal_add_js(drupal_get_path('theme', 'drivewaysurfing') . '/js/gmap_remember_zoom.js','file');
 
 /**
  * Implementation of HOOK_theme().
